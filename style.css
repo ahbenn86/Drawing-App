@@ -1,17 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
-	/* Universal Selector. Applies this code to everything. */
 
-	box-sizing: border-box; /* If we apply any padding or border to an element, it doesn't effect the width */
+	box-sizing: border-box; 
 }
 body {
+	background-color: #f5f5f5;
 	font-family: "Roboto", sans-serif;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	overflow: hidden;
 	display: flex;
 	margin: 0;
+}
+
+canvas {
+	border: 2px solid rgb(0, 0, 0);
+}
+
+.toolbox {
+background-color: rgb(214, 0, 0);
+border: 1px solid rgb(121, 9, 9);
+display: flex;
+width: 804px;
+padding: 1 rem;
+}
+
+.toolbox > * { /* Targets all the direct children of toolbox */
+
+	background-color: white;
+	border: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2 rem;
+	height: 50px;
+	width: 50px;
+	margin: 0.25rem;
+	padding: 0.25rem;
+	cursor: pointer;
+}
+
+.toolbox > *:last-child {
+
+	margin-left: auto;
 }
